@@ -193,17 +193,19 @@ nav button:hover{
     min-height: 300px;
     perspective: 800px;
     cursor: pointer;
-    transform-style: preserve-3d;
     transition: transform 0.4s;
+    transform-style: preserve-3d;
+    -webkit-transition: transform 0.4s;
     -webkit-transform-style: preserve-3d;
 }
 
 .book-inner{
     width:100%;
     height: 100%;
-    transform-style: preserve-3d;
     border-radius: 0px 3px 3px 0px;
     transition: transform 0.4s;
+    transform-style: preserve-3d;
+    -webkit-transition: transform 0.4s;
     -webkit-transform-style: preserve-3d;
 }
 
@@ -253,12 +255,14 @@ nav button:hover{
     height: 100%;
     position: absolute;
     top:0;bottom:0;left:0;right: 0;
-    transform: translateZ(-20px) translateX(10px);
     border-radius: 0px 3px 3px 0px;
+    transform: translateZ(-20px) translateX(10px);
+    -webkit-transform: translateZ(-20px) translateX(10px);
 }
 
 .book-frontal, .book-back, .pages, .cover, .side{
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .book-back{
@@ -271,6 +275,7 @@ nav button:hover{
     border-radius: 3px 0px 0px 3px;
     cursor:pointer;
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
 }
 
 .side{
@@ -292,18 +297,21 @@ nav button:hover{
         black 100%
     );
     transform: rotateY(-180deg) rotate3d(0,1,0,70deg) translateZ(13px) translateX(8px);
+    -webkit-transform: rotateY(-180deg) rotate3d(0,1,0,70deg) translateZ(13px) translateX(8px);
 }
 
 .book-general{
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition: transform 0.4s;
     width:100%;
     height:100%;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: transform 0.4s ;
 }
 
 .flip{
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
 }
 
 .back-content{
@@ -321,6 +329,7 @@ nav button:hover{
 
 .book-wrap:hover .book-inner{
     transform: rotate3d(0,1,0,-10deg);
+    -webkit-transform: rotate3d(0,1,0,-10deg);
 }
 
 .row{
@@ -356,18 +365,22 @@ nav button:hover{
     width:100%;
     height:100%;
     margin: 0 auto;
-    transform: translateX(60px);
     color:white;
     background-color:red;
     position: absolute;
     top:0;left:0;right:0;bottom:0;
     padding-top:2px;
+    transform: translateX(60px);
     transition: all ease-in-out 0.3s;
+    -webkit-transform: translateX(60px);
+    -webkit-transition: all ease-in-out 0.3s;
 }
 
 .delete-button:hover::after{
     transition: all ease-in-out 0.3s;
     transform: translateX(0px);
+    -webkit-transition: all ease-in-out 0.3s;
+    -webkit-transform: translateX(0px);
 }
 
 .row p{
@@ -427,6 +440,7 @@ nav button:hover{
     font-size:0.7rem;
     font-weight: bold;
     cursor:pointer;
+    -webkit-transition: all 0.4s;
 }
 
 .read-button:hover{
@@ -516,6 +530,8 @@ footer li{
         top:0;left:0;right:0;bottom:0;
         padding-top:2px;
         transition: all ease-in-out 0.3s;
+        -webkit-transform: translateX(5vw);
+        -webkit-transition: all ease-in-out 0.3s;
     }
 
     header h1{
