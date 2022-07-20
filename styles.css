@@ -260,7 +260,7 @@ nav button:hover{
     -webkit-transform: translateZ(-20px) translateX(10px);
 }
 
-.book-frontal, .book-back, .pages, .cover, .side{
+.book-frontal, .book-back, .pages, .cover, .side, .book-front, .delete-button{
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
