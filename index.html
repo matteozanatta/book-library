@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-it">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script type="text/javascript" src="function.js" defer></script>
+        <title>Virtual Book Library</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Virtual Book Library</h1>
+                <p>Keep track of the book you have already read and those you would like to read in the future</p>
+            </header>
+            <nav>
+                <ul>
+                    <li><button id="new_book">+ New Book</button></li>
+                    <li><button id="reset_books">Reset Book List</button></li>
+                </ul>
+            </nav>
+            <modal id="modal">
+                    <form id="modal-container" action="">
+                        <h1 class="flex_total_center">Add a new book</h1>
+                        <div class="row">
+                            <label for="title">Title:</label>
+                            <input id="title" name="title" type="text" pattern="[\w.,'']{1,30}" required/>
+                        </div>
+                        <div class="row">
+                            <label for="author">Author:</label>
+                            <input id="author" name="author" type="text" pattern="[\w.,'']{1,30}" required/>
+                        </div>
+                        <div class="row">
+                            <label for="year">Year:</label>
+                            <input id="year" name="year" type="text" pattern="[\d]{4}" required/>
+                        </div>
+                        <div class="row">
+                            <label for="read">Read:</label>
+                            <select id="read" name="read">
+                                <option value="true">Already read</option>
+                                <option value="false">To read</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="url">Cover book url:</label>
+                            <input id="url" name="url" type="text"/>
+                        </div>
+                        <div class="flex_total_center">
+                            <button type="submit" id="submit">Add new book</button>
+                        </div>
+                    </form>
+                
+            </modal>
+            <sector id="books-container">
+            </sector>
+        </main>
+        <footer>
+            <ol>
+                <li>Made by Matteo Zanatta</li>
+                <li>|</li>
+                <li>GitHub<i></i></li>
+            </ol>
+        </footer>
+    </body>
+</html>
+</html>
