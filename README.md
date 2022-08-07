@@ -1,5 +1,6 @@
 # book-library
 A virtual book library made with HTML, CSS and vanilla JS.
+The website is accessible here: https://matteozanatta.github.io/virtual-book-library/
 
 # Resources and what I have learned
 What are the resources I have used while developing this project?
