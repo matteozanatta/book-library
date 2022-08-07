@@ -3,7 +3,7 @@ A virtual book library made with HTML, CSS and vanilla JS.
 <br>
 The website is accessible here: https://matteozanatta.github.io/virtual-book-library/
 
-# Resources and what I have learned
+# Resources used and what I have learned
 What are the resources I have used while developing this project?
 <br>
 - <b>HTML</b>
